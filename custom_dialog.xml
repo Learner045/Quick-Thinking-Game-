@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="2dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/stripimage"
+        android:background="@drawable/stripimage"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:padding="5dp"
+        android:text="Quick Thinking"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:layout_below="@+id/stripimage"
+        android:id="@+id/textAboutUs"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:text="\nQuick Thinking\nContact us at:\ncreativelyblessedd@gmail.com\n We hope you enjoy playing this game.\n Share it with your friends. \n \n Thank You!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textAboutUs"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/ohk"
+            android:layout_marginLeft="15dp"
+            android:text="ok"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/textAboutUs"
+            android:layout_alignParentLeft="true"
+            android:background="@xml/button_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0066ff"
+    android:orientation="horizontal"
+    android:layout_weight="3"
+    tools:context="quicky.creativelyblessed.com.quickthinking.FragmentSettings">
+
+
+    <ImageView
+        android:id="@+id/sound"
+        android:src="@drawable/music"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <ImageView
+        android:id="@+id/shareApp"
+        android:layout_weight="1"
+        android:elevation="5dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/share"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:id="@+id/Info"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:background="@drawable/info"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+
+
+</LinearLayout>

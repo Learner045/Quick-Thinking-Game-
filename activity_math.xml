@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_math"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/top_padding"
+    tools:context="quicky.creativelyblessed.com.quickthinking.MathActivity">
+
+    <LinearLayout
+        android:id="@+id/layer1"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_marginTop="12dp"
+            android:progressDrawable="@xml/progress_drawable"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:textSize="30sp"
+            android:text="00"
+            android:background="#f691f4"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layer2"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="75sp"
+            android:textAlignment="center"
+            android:text="1+20"
+            android:textColor="#500f50"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/layer2"
+        android:id="@+id/layer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button android:id="@+id/button0"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:textColor="#FFFFFF"
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:background="@xml/button_shape"
+            android:layout_margin="5dp"
+            android:tag="0"
+            android:text="String 1"
+            android:onClick="chooseAns"
+
+            />
+        <Button android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:textColor="#FFFFFF"
+            android:background="@xml/button_shape"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:tag="1"
+            android:text="String 1"
+            android:onClick="chooseAns"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/layer3"
+        android:id="@+id/layer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:textColor="#FFFFFF"
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:background="@xml/button_shape"
+            android:layout_margin="5dp"
+            android:tag="2"
+            android:text="String 1"
+            android:onClick="chooseAns"
+
+            />
+        <Button android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:textColor="#FFFFFF"
+            android:background="@xml/button_shape"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:tag="3"
+            android:text="String 1"
+            android:onClick="chooseAns"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
